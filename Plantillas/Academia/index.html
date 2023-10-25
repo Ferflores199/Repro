@@ -1,0 +1,305 @@
+{% extends "Academia/base.html" %}
+{% load static %}
+
+{% block content %}
+
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-5">
+							<div class="intro-excerpt">
+								<h1>Estudio<span clsas="d-block"> Moderno</span></h1>
+								<p class="mb-4">La Universidad de San Carlos de Guatemala es una institución de educación superior estatal con una cultura democrática y autónoma, 
+									un enfoque multicultural e intercultural y un compromiso con el desarrollo científico, social, humanista y ambiental de la sociedad. Id y Enseñad a Todos.</p>
+								<p><a href="{% url 'logear'%}" class="btn btn-secondary me-2">Inscribite</a><a href="{% url 'about'%}" class="btn btn-white-outline">Mas informacion</a></p>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="hero-img-wrap">
+								<img src="{% static 'images/couch.png'%}" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+
+		<!-- Start Product Section -->
+		<div class="product-section">
+			<div class="container">
+				<div class="row">
+
+					<!-- Start Column 1 -->
+					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+						<h2 class="mb-4 section-title">Cursos para cualquier nivel educativo.</h2>
+						<p class="mb-4">Promoveremos por todos los medios a su alcance la investigación en todas las esferas del saber humano y cooperará al estudio y solución de los problemas nacionales . </p>
+						<p><a href="shop.html" class="btn">Explorar</a></p>
+					</div> 
+					<!-- End Column 1 -->
+
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="cart.html">
+							<img src="{% static 'images/product-1.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Programacion</h3>
+							<strong class="product-price">Asignate</strong>
+
+							<span class="icon-cross">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+
+					<!-- Start Column 3 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="cart.html">
+							<img src="{% static 'images/product-2.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Robotica</h3>
+							<strong class="product-price">Asignate</strong>
+
+							<span class="icon-cross">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 3 -->
+
+					<!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="cart.html">
+							<img src="{% static 'images/product-3.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Electronica</h3>
+							<strong class="product-price">Asignate</strong>
+
+							<span class="icon-cross">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 4 -->
+
+				</div>
+			</div>
+		</div>
+		<!-- End Product Section -->
+
+		<!-- Start Why Choose Us Section -->
+		<div class="why-choose-section">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-6">
+						<h2 class="section-title">Jornadas</h2>
+						<p>Para poder brindar una mejor atencion a nuestros estudiantes tenemos diferentes jornadas.</p>
+
+						<div class="row my-5">
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static 'images/truck.svg'%}" alt="Image" class="imf-fluid">
+									</div>
+									<h3> Matutina </h3>
+									<p>La jornada empieza desde las 7:00 Am a 12:30 PM.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static 'images/truck.svg'%}" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Vespertina</h3>
+									<p>La jornada empieza desde las 1:00 Pm a 5:30 PM.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static 'images/bag.svg'%}" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Diurna</h3>
+									<p>La jornada empieza desde las 5:30 Pm a 9:00 PM..</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static 'images/truck.svg'%}" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Fin de Semana</h3>
+									<p>Esta jornada se lleva a cabo los dos dias del fin de semana a partir de las 7:00 Am hasta las 2:00 PM.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-5">
+						<div class="img-wrap">
+							<img src="{% static 'images/why-choose-us-img.jpg'%}" alt="Image" class="img-fluid">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Why Choose Us Section -->
+
+		<!-- Start We Help Section -->
+		<div class="we-help-section">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-7 mb-5 mb-lg-0">
+						<div class="imgs-grid">
+							<div class="grid grid-1"><img src="{% static 'images/img-grid-1.jpg'%}" alt="Untree.co"></div>
+							<div class="grid grid-2"><img src="{% static 'images/why-choose-us-img.jpg'%}" alt="Untree.co"></div>
+							<div class="grid grid-3"><img src="{% static 'images/img-grid-3.jpg'%}" alt="Untree.co"></div>
+						</div>
+					</div>
+					<div class="col-lg-5 ps-lg-5">
+						<h2 class="section-title mb-4">Instalaciones</h2>
+						<p>
+							La Universidad de San Carlos de Guatemala (USAC) es la universidad pública más grande de Guatemala y cuenta con una amplia red de instalaciones en todo el país. La sede principal, 
+							la Ciudad Universitaria, se encuentra en la zona 12 de la ciudad de Guatemala y alberga a la mayoría de las facultades y escuelas de la universidad.</p>
+							
+							Las instalaciones de la Ciudad Universitaria incluyen:
+						<ul class="list-unstyled custom-list my-4">
+							<li>Edificios académicos</li>
+							<li>Instalaciones deportivas</li>
+							<li>Instalaciones culturales</li>
+						</ul>
+						<p><a herf="{% url 'about'%}" class="btn">Explorar</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End We Help Section -->
+
+		<!-- Start Popular Product -->
+		<div class="popular-product">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="{% static 'images/presencial.png'%}" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Presencial</h3>
+								<p>En esta modalidad se tendra que recibir los cursos de manera presencial en el campus central. </p>
+								<p><a href="{% url 'services'%}">Mas información</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="{% static 'images/hibrido.png'%}" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Hivrido</h3>
+								<p>En esta modalidad se iran algunos dias de manera presencial y otras en las aulas virtuales. </p>
+								<p><a href="{% url 'services'%}">Mas información</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="{% static 'images/virtual.png'%}" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Virtual</h3>
+								<p>En esta modalidad se impartiran los cursos siempre por medio de aula virtual. </p>
+								<p><a href="{% url 'services'%}">Mas información</a></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Popular Product -->
+
+		<!-- Start Testimonial Slider -->
+		<div class="testimonial-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 mx-auto text-center">
+						<h2 class="section-title">Estudiantes egresados</h2>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-12">
+						<div class="testimonial-slider-wrap text-center">
+
+							<div id="testimonial-nav">
+								<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+								<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+							</div>
+
+							<div class="testimonial-slider">
+								
+								<div class="item">
+									<div class="row justify-content-center">
+										<div class="col-lg-8 mx-auto">
+
+											<div class="testimonial-block text-center">
+												<blockquote class="mb-5">
+													<p>Como mujer graduada en Ingeniería Electrónica de la Universidad de San Carlos de Guatemala (USAC), puedo decir que ha sido una experiencia transformadora y enriquecedora. La formación académica brindada por la USAC me ha dotado de las habilidades técnicas necesarias para enfrentar los desafíos en el mundo de la electrónica. Además, me siento orgullosa de romper estereotipos de género en un campo históricamente dominado por hombres.</p>
+												</blockquote>
+
+												<div class="author-info">
+													<div class="author-pic">
+														<img src="{% static 'images/person-1.png'%}" alt="Maria Jones" class="img-fluid">
+													</div>
+													<h3 class="font-weight-bold">Maria Jones</h3>
+													<span class="position d-block mb-3">CEO, Grupo Macro, ING.Electronica.</span>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> 
+								<!-- END item -->
+
+								<div class="item">
+									<div class="row justify-content-center">
+										<div class="col-lg-8 mx-auto">
+
+											<div class="testimonial-block text-center">
+												<blockquote class="mb-5">
+													<p>Mi experiencia como graduado en Ingeniería Mecánica de la Universidad de San Carlos de Guatemala (USAC) ha sido verdaderamente enriquecedora. La formación rigurosa que recibí en esta prestigiosa institución me ha permitido desarrollar habilidades técnicas sólidas y una profunda comprensión de los principios de la ingeniería mecánica. Estoy orgulloso de ser parte de una comunidad de ingenieros dedicados a diseñar y crear soluciones innovadoras en el ámbito mecánico. Creo firmemente en el papel crucial que desempeña la ingeniería mecánica en la resolución de problemas del mundo real y en el avance de la tecnología</p>
+												</blockquote>
+
+												<div class="author-info">
+													<div class="author-pic">
+														<img src="{% static 'images/person_3.jpg'%}" alt="Carlos Suchite" class="img-fluid">
+													</div>
+													<h3 class="font-weight-bold">Carlos Suchite</h3>
+													<span class="position d-block mb-3"> CEO,Red bull Racing,  ING.Mecanico Electrico.</span>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> 
+								<!-- END item -->
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Testimonial Slider -->
+
+        
+{% endblock %}	

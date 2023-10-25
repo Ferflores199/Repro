@@ -1,0 +1,38 @@
+{% extends "Academia/base2.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+        
+        <div id="contenedor">
+            <div id="central">
+                <div id="login">
+                    <div class="titulo">
+                        Bienvenido
+                    </div>
+                    <form  method="post" action="">
+                        {% csrf_token %}
+                        {{form|crispy}}
+
+                        {% if messages %}
+                        {% for mensaje in messages %}
+                        <div class="alert alert-danger mt-5" role="alert">
+                            <strong> {{mensaje}}</strong>
+                        </div>
+                        {% endfor %}
+                    
+                        {% endif %}
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="Login" {% if 'ok' in request.GET %}disabled{% endif %}{% if 'error' in request.GET %}disabled{% endif %}>
+                      </br>
+                      </form>
+                    <div class="pie-form">
+                        <a href="{% url 'password_reset'%}">¿Perdiste tu contraseña?</a>
+                        <a href="{% url 'Register'%}">¿No tienes Cuenta? Registrate</a>
+                    </div>
+                </div>
+                <div class="inferior">
+                    <a href="{% url 'home'%}">Volver</a>
+                </div>
+            </div>
+        </div>
+{% endblock %}

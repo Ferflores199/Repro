@@ -1,0 +1,26 @@
+{% extends "Academia/base2.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<br>
+</br>
+        <div id="contenedor">
+            <div id="central">
+                <div id="login">
+                    <div class="titulo">
+                        Bienvenido
+                    </div>
+                    <form  method="post" action="">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="Registrate">
+                      </br>
+                      </form>
+                </div>
+                <div class="inferior">
+                    <a href="{% url 'home'%}">Volver</a>
+                </div>
+            </div>
+        </div>
+{% endblock %}

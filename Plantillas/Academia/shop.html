@@ -1,0 +1,46 @@
+{% extends "Academia/base3.html" %}
+{% load static %}
+{% block content %}
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-5">
+							<div class="intro-excerpt">
+								<h1>Catalogos de Cursos</h1>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+
+	<div class="product-section">
+		<div class="container">
+			<div class="row">
+				{% for curso in cursos %}
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'carrito'%}">
+							<img src="{{ curso.imagen.url }}" alt="{{ curso.nombre }}" class="img-fluid product-thumbnail">
+							<div class="card-body" style="text-align: center;">
+								<h5 class="card-title">{{curso.nombre}}</h5>
+								<p class="card-subtitle">Creditos otorga el curso {{curso.creditos}}</p>
+								<p class="card-subtitle">Cupo de estudiantes {{curso.cupo}}</p>
+								<p class="card-text">{{curso.descripcion}}</p>
+								<span class="icon-cross">
+									<img src="{% static 'images/cross.svg'%}" class="img-fluid">
+								</span>
+						</a>
+							</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+		
